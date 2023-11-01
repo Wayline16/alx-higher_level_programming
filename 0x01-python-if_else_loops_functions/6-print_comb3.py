@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for number in range(0,10):
+for number in range(0, 10):
     for j in range(1, 10):
         if number >= j:
             continue
