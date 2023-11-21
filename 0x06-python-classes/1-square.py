@@ -4,4 +4,10 @@
 
 class Square:
     """Class that defines properties of square."""
+    """"Private instance attribute: size"""
+    """"Instantiation with size"""
+    
+    def __init__(self, __size):
+        self.__size = __size
+
     pass
