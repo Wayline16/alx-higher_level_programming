@@ -117,12 +117,12 @@ class Rectangle:
         (__height * 2).
 
         """
-        if self.__width is 0 or self.__height is 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         else:
             return (self.__width * 2) + (self.__height * 2)
 
-    def _draw_rectangle(self):
+    def draw_rectangle(self):
         """Formats a string of '#' and '\n' chars to print the rectangle
         represented by the current instance.
 
@@ -138,7 +138,7 @@ class Rectangle:
         """
         str = ""
         for row in range(self.__height):
-            for col in range(self.__width):
+            for column in range(self.__width):
                 str += "{}".format(self.print_symbol)
             if self.__width != 0 and row < (self.__height - 1):
                 str += '\n'
@@ -152,7 +152,7 @@ class Rectangle:
         representation of the rectangle suitable for printing.
 
         """
-        return self._draw_rectangle()
+        return self.draw_rectangle()
 
     def __repr__(self):
         """Allows use of eval().
