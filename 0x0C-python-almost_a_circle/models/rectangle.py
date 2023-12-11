@@ -66,3 +66,8 @@ class Rectangle(Base):
         """Public method that calculates the area of the rectangle"""
         return self.height * self.width
     
+    def display(self):
+        """Public method that draws the rectangle using #"""
+        s = '\n' * self.y + \
+            (' ' * self.x + '#' * self.width + '\n') * self.height
+        print(s, end='')
