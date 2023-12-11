@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
 class Base:
+    """Base class"""
     __nb_objects = 0
     
     def __init__(self, id=None):
-        '''Constructor.'''
+        """Constructor"""
         if id is not None:
             self.id = id
         else:
