@@ -1,6 +1,5 @@
 #!/usr/bin/node
-// prints 3 lines: (like 1-multi_languages.js) but by
-// using an array of string and a loop
+//  prints a square
 
 const number = process.argv[2];
 const size = parseInt(number);
@@ -12,3 +11,4 @@ if (!isNaN(size)) {
   } else {
     console.log('Missing size');
   }
+  
