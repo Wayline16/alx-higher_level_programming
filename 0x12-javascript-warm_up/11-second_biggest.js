@@ -7,3 +7,4 @@ if (process.argv.length <= 3) {
     const list = process.argv.sort();
     console.log(list.reverse()[1]);
   }
+  
