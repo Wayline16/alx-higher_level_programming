@@ -23,3 +23,4 @@ if __name__ == "__main__":
     # commit and close session
     session.commit()
     session.close()
+    
